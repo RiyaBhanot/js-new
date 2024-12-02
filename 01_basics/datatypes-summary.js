@@ -18,5 +18,3 @@ const myfun = function(){
 }
 
 console.log(typeof myfun)
-
-
