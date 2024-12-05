@@ -55,5 +55,10 @@ console.log(name)
 
 //now we can convert the JSON values into object or array format from their we can access the values using the methods which we have
 // used to access the values from different objects
+//********JavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax. 
+//It is commonly used for transmitting data in web applications (e.g., sending some data from the server to the client, so it can be displayed on a web page, or vice versa).  */
+//JSON is a text-based data format following JavaScript object syntax
 
+
+//refer to mdn docs
 
