@@ -19,6 +19,12 @@ const user = {                    /////////first object
 }
 
 // console.log(user.fullname.userfullname.firstname) /////// we can access the nested objects by using this method of dot notation
+//**********Optional Chaining *********//////////
+//The optional chaining (?.) operator accesses an object's property or calls a function. 
+//If the object accessed or function called using this operator is undefined or null, 
+//the expression short circuits and evaluates to undefined instead of throwing an error.
+
+
 
 ////object merging
 const obj1 = {1:"a",2:"b"}
