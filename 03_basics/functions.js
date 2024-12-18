@@ -129,7 +129,18 @@ function loginMsg(username = "RIya") // we can also pass any default value  in t
 }
 // console.log(loginMsg())
 
-//ayush confuse me in this
+//*************************ayush confuse me in this**************************************************
+//below explanation-----
+//in JavaScript, parameters are passed by value.
+//  When you pass a value to a function and assign a new value to the parameter 
+// inside the function, the change is local to the function and does not affect the original value outside the function.
+// Objects in JavaScript are also passed by value.
+// However, when you pass an object to a function, the value being passed is the reference to the object.
+// So, modifying the properties of the object affects the original object, but assigning a completely new object does not.
+//Key Takeaways:
+// 1. Primitive values are passed by value. Assigning a new value to the parameter inside the function does not affect the original variable.
+// 2. Objects are also passed by value, but the value is a reference to the object. Modifying properties of the object affects the original object, but assigning a completely new object does not.
+
 // let obj = {
 //     value: 35
 // };
