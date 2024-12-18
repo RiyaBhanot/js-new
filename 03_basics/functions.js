@@ -127,7 +127,7 @@ function loginMsg(username = "RIya") // we can also pass any default value  in t
 
     return `${username} just logged in`
 }
-console.log(loginMsg())
+// console.log(loginMsg())
 
 //ayush confuse me in this
 // let obj = {
@@ -143,3 +143,50 @@ console.log(loginMsg())
 // console.log(`After calling function ${obj.value}`); 
 
 
+//when we create a shopping cart in our project in which we have to add items then we never know about the values to be added 
+// so in that case we use rest operator (...) also called spread operator
+
+function calculateItemsCart(val1,val2,...num)
+{
+  return num // we can only pass one value in the return function so in order to pass multiple values we have to pass an array or an object into it.
+}
+
+console.log(calculateItemsCart(100,200,300,400))
+
+//just for reading
+//Type safety in the source code is a programming language control that ensures that any variable 
+//access only its authorized memory locations in a well-defined and permissible way. 
+// In other words, the type safety feature ensures that the code doesn't perform any invalid 
+// operation on the underlying object.
+
+const user = {
+    username:"riya",
+    price:"400"  // if here the price word changes to prices than the below called function will print undefined in username.price statement
+                 // so to resolve this we promptly check the typesafety of our code.
+                 //in typescript, it can easliy be checked but in js we have to write extra code for it.
+}
+
+function handleobject(anyobject)
+{
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`) 
+}
+
+// handleobject(user)
+
+//in the above code we are making an object and then we are passing it to the function, but we can also directly pass it to the function by the below code
+handleobject(
+    {
+        username:"nrki",
+        price:"300"
+    }
+)
+
+//we can also pass arrays into our function by ----
+const newarr = [100,200,300,"riya"]
+function arrpass(myarr){
+    return myarr
+}
+console.log(arrpass(newarr)) // normal method, by creating an array above and then passing it to the function
+
+//we can also pass this by directly creating
+console.log(arrpass([200,300,400,800])) // direct passing and creation of an array
