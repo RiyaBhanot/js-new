@@ -52,7 +52,7 @@ console.log(myarr1)
 console.log(myarr1.splice(2,5)) ////(start,ending count) // we have to count the elements upto given specified length //it manipulate the array and uses the method of cut paste
 console.log(myarr1)
 /////refer to mdn docs /////
-
+console.log(typeof myArr)
 
 
 
