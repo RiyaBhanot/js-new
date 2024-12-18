@@ -117,7 +117,7 @@ function addtwonumbers(number1,number2) //---- number1 and number2 is parameters
 
 //another way of doing the above code
 //
-function loginMsg(username)
+function loginMsg(username = "RIya") // we can also pass any default value  in the parameters also so that if we not pass any value it can take this value
 {
    if(!username){ //-- in js !not means undefined and also "" empty string means false so whenver we pass nothing or a empty string inside this ,this statememt 
 //will get execute 
@@ -127,7 +127,7 @@ function loginMsg(username)
 
     return `${username} just logged in`
 }
-console.log(loginMsg(""))
+console.log(loginMsg())
 
 //ayush confuse me in this
 // let obj = {
@@ -141,3 +141,5 @@ console.log(loginMsg(""))
 // console.log(`Before calling functi on ${obj.value}`);
 // riyaa(obj)
 // console.log(`After calling function ${obj.value}`); 
+
+
