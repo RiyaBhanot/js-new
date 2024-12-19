@@ -17,5 +17,3 @@ console.log(this) // this will give empty string because the context is not defi
 // is supposed to run. Most typically, it is used in object methods, where this refers to the object that the method is attached to, 
 // thus allowing the same method to be reused on different objects.
 
-// Checking for updates
-fjdfjd
