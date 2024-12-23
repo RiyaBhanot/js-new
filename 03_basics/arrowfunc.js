@@ -38,3 +38,9 @@ console.log(add4(1, 2))
 const arr = [1, 2, 3, 4]
 arr.forEach(() => { }) //elaborating in next video 
 
+//arrow function in js
+//(param1, param2, ...) => {
+// function body
+//}
+
+
