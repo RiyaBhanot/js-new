@@ -59,26 +59,6 @@ if (googlelog || numberlog) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //In JavaScript, the operators != and !== are used to compare two values, but they work differently because of type coercion.
 
 //  != (Loose Inequality)
