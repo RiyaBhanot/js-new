@@ -19,20 +19,21 @@ console.log(this) // this will give empty string because the context is not defi
 
 //arrow function
 //explicit method of arrow functions
-// const add2 = (num1, num2) => {
-//     return num1 + num2
-// }
+//whenever we perform explicit calling of arrow function then we have to write "RETURN", unless it give either an empty array or undefined
+const add2 = (num1, num2) => {
+    return num1 + num2
+}
 
-// console.log(add2(1, 2))
+console.log(add2(1, 2))
 
 
 //implicit method of arrow functions
 const add3 = (num1, num2) => (num1 + num2)
-console.log(add3(1, 2))
+// console.log(add3(1, 2))
 
 //method to return an object in arrow functions
 const add4 = (num1, num2) => ({ username: "riya" })
-console.log(add4(1, 2))
+// console.log(add4(1, 2))
 
 //arrow func in loops 
 const arr = [1, 2, 3, 4]
