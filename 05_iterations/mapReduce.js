@@ -34,7 +34,7 @@ const newnums2 = new2.map((num) => (num * 10))  //updated value get passed on to
     .map((num) => (num + 1))
     .filter((num) => (num >= 40))
 
-console.log(newnums2);
+console.log(newnums2)
 
 
 
