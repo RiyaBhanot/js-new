@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAC</title>
+</head>
+
+<body style="background-color: #212121;color:#fff" ;>
+
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "main"
+    div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute('title', 'generated title')
+    div.style.backgroundColor = 'green'
+    div.style.padding = '15px'
+    // this can add a text -- but this approach is not used widely as it overrides the text, 
+    //first it fetches the data through request then override it
+    // div.innerText = 'riya and nrki'
+    //the below approach will also add a text // this is suggested approach because it directly adds the text
+    const addtext = document.createTextNode('riya and nrki')
+    //to add the text to div
+    div.appendChild(addtext)
+    //now attach the text to body
+    document.body.appendChild(div)
+</script>
+
+</html>
