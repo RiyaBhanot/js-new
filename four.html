@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAC </title>
+</head>
+
+<body style="background-color: #212121; color : #fff">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    //first method of adding new list item,in this we have used innerHTML  function which
+    //can traverse the whole list before adding element into it which can lead to optimization
+    //issues.
+    function addlang(langName) {
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+
+    }
+    addlang("python")
+    addlang('java')
+    //second method of adding new list item 
+    //this is more optimised approch of adding new list item
+    function optilang(langName) {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    optilang("golang")
+
+    //edit values
+    const secondlang = document.querySelector("li:nth-child(2)")
+    //again this innerHTML will result in traversing the whole list
+    // secondlang.innerHTML = "c++"
+
+    //another method below-----
+    const newli = document.createElement('li')
+    newli.textContent = "cpp"
+    secondlang.replaceWith(newli)
+
+    //edit // another method below
+    const firstlang = document.querySelector("li:first-child")
+    firstlang.outerHTML = '<li>typescript</li>'
+
+    //remove
+    const lastlang = document.querySelector("li:last-child")
+    lastlang.remove()
+</script>
+
+</html>
