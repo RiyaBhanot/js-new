@@ -38,6 +38,9 @@ buttons.forEach(function(button){
 ## BMI Calculator (project 2nd)
 ``` javascript
  const form = document.querySelector('form')
+//  this will give empty values that's why we have to write this inside the function
+// const height = parseInt(document.querySelector('#height').value) 
+// const weight = parseInt(document.querySelector('#weight').value)
 
 form.addEventListener('submit',function(e)
 {
@@ -69,4 +72,15 @@ form.addEventListener('submit',function(e)
    results.innerHTML = `<span>BMI: ${bmi} - ${category}</span>`
   } 
 })
+```
+
+## Digital Clock (project 3rd)
+```javascript
+const clock = document.getElementById('clock')
+// const clock = document.querySelector('#clock') 
+//can use any of the above mentioned method
+setInterval(function(){
+  let date = new Date()
+  clock.innerHTML = date.toLocaleTimeString()
+},1000)  // 1000 fo 1 second
 ```
